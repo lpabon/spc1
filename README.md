@@ -14,7 +14,7 @@ size of 45GB, and ASU3 (Log) size of 10GB.
 
 ![asu2_w](images/asu2_w.png)
 
-![asu3_w](images/as3_w.png)
+![asu3_w](images/asu3_w.png)
 
 
 # NetApp SPC1
