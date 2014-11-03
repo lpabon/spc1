@@ -114,7 +114,7 @@ static int asu3_mult;
  *
  * V2 enlarges the tree and loops for out-of-bounds requests.
  * The version two generator will do this, but with a bound of 100
- * loops. 
+ * loops.
  *
  * FIXED uses a smaller tree, like classic, but fixes the data
  * sharing model to do the right thing.
@@ -291,7 +291,7 @@ init(struct state_block_s *sp, int bsu_count)
 	sp->stream_count = sp->bsu_count * BSU_STREAMS;
 	sp->io_heap = (struct io_state_s *)malloc(sp->stream_count *
 			(sizeof (struct io_state_s)));
-	
+
 	if (sp->io_heap == (struct io_state_s *)0) {
 		return SPC1_ENOMEM;
 	}
@@ -341,7 +341,7 @@ init(struct state_block_s *sp, int bsu_count)
  * stream pointed to by io_heap.
  *
  * This is the guts of the heap algorithm.
- * 
+ *
  * The array represents a binary tree.
  * The tree has the property that tree[i] has children at
  * tree[2i+1] and [2i+2].
@@ -352,7 +352,7 @@ requeue_i(struct state_block_s *sp, int n)
 {
 	struct io_state_s it;
 	struct io_state_s *root, *left, *right;
-	
+
 	root = sp->io_heap + n;
 	left = sp->io_heap + (2 * n + 1);
 	right = left + 1;
@@ -415,7 +415,7 @@ smix(void)
 {
 	return smix_lengths[rnd(sizeof smix_lengths / sizeof (int))];
 }
-	
+
 
 #if SPC1_USE_INTEGER_MATH == 1
 #define	RAND	((unsigned)lrand48()*2)
@@ -780,7 +780,7 @@ hrrw(struct hrrw_s *hp, struct io_state_s *ip)
 			}
 
 		}
-		if (rnd(100) < 15) 
+		if (rnd(100) < 15)
 			// 15% of the time do two writes
 			ip->i_rewrite = 1;
 	}
@@ -921,7 +921,7 @@ gen_io_i(struct spc1_io_s *spc1_io, struct state_block_s *sp)
         case 3:  spc1_io->pos /= asu3_mult; break;
         default: return SPC1_EASU;
         }
-            
+
 	return retcode;
 }
 
@@ -1001,7 +1001,7 @@ spc1_compute_multiplier(int size, int min)
         total += 10 * size;
         mult += 10;
     }
-    
+
     while (total < min) {
         total += size;
         ++mult;
