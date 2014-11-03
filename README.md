@@ -2,9 +2,9 @@
 I created a simple test file to visualize the I/O pattern of NetApp's spc1 workload.
 
 # IO Pattern
-Here is an example IO pattern for a simulation running 50 mil IOs.  The
-simulation ran with an ASU1 (Data Store) size of 45GB, ASU1 (User Store)
-size of 45GB, and ASU3 (Log) size of 10GB.
+Here is an example IO pattern for a simulation running 50 mil IOs using
+HRRW_V2.  The simulation ran with an ASU1 (Data Store) size of 45GB,
+ASU1 (User Store) size of 45GB, and ASU3 (Log) size of 10GB.
 
 ![asu1_r](images/asu1_r.png)
 

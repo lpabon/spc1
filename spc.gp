@@ -26,5 +26,3 @@ plot "asu2_w.csv" using 1:2 title "Writes"
 set output "asu3_w.png"
 set title "ASU 3: Log"
 plot "asu3_w.csv" using 1:2 title "Writes"
-
-3 Writes"
