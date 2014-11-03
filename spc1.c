@@ -128,7 +128,7 @@ static int asu3_mult;
 #define	HRRW_BLOCKS_PER_LEAF	8
 #define	HRRW_V2_RETRY	100
 
-static int hrrw_style = HRRW_CLASSIC;
+static int hrrw_style = HRRW_V2;
 
 static int
 rnd(int n);
