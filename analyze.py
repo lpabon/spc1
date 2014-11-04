@@ -40,22 +40,17 @@ class ASU:
 
 asus = [ ASU(1), ASU(2), ASU(3)]
 
-while True:
-	line = fp.readline()
-	if line:
-		csv = line.split(',')
-		rw = int(csv[1].strip())
-		asu = int(csv[2].strip())
-		len = int(csv[3].strip())
-		offset = int(csv[4].strip())
+for line in fp.readlines():
+	csv = line.split(',')
+	rw = int(csv[1].strip())
+	asu = int(csv[2].strip())
+	len = int(csv[3].strip())
+	offset = int(csv[4].strip())
 
-		while len > 0:
-			asus[asu-1].io(rw, offset)
-			offset += 1
-			len -= 1
-	else:
-		break
+	while len > 0:
+		asus[asu-1].io(rw, offset)
+		offset += 1
+		len -= 1
 
 for asu in asus:
 	asu.tocsv()
-
