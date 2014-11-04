@@ -1,5 +1,5 @@
 # Overview
-I created a simple test file to visualize the I/O pattern of NetApp's spc1 workload.
+I created a simple test file to visualize the I/O pattern of NetApp's spc1 workload.  This work is uses the open source SPC-1 workload generator described on the publication [A portable, open-source implementation of the SPC-1 workload](http://www3.lrgl.uqam.ca/csdl/proceedings/iiswc/2005/9461/00/01526014.pdf)
 
 # IO Pattern
 Here is an example IO pattern for a simulation running 50 mil IOs using
