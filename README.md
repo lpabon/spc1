@@ -1,10 +1,10 @@
 # Overview
-I created a simple test file to visualize the I/O pattern of NetApp's spc1 workload.  This work is uses the open source SPC-1 workload generator described on the publication [A portable, open-source implementation of the SPC-1 workload](http://www3.lrgl.uqam.ca/csdl/proceedings/iiswc/2005/9461/00/01526014.pdf)
+I created a simple test porgram to visualize the I/O pattern of NetApp's spc1 workload.  This work is uses the open source SPC-1 workload generator described on the publication [A portable, open-source implementation of the SPC-1 workload](http://www3.lrgl.uqam.ca/csdl/proceedings/iiswc/2005/9461/00/01526014.pdf)
 
 # IO Pattern
 Here is an example IO pattern for a simulation running 50 mil IOs using
 HRRW_V2.  The simulation ran with an ASU1 (Data Store) size of 45GB,
-ASU1 (User Store) size of 45GB, and ASU3 (Log) size of 10GB.
+ASU2 (User Store) size of 45GB, and ASU3 (Log) size of 10GB.
 
 ![asu1_r](images/asu1_r.png)
 
